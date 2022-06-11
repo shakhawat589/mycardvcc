@@ -17,6 +17,11 @@
       <div class="brand">
         <img src="./images/Logo.svg" alt="">
       </div>
+      <div class="toggle-btn">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+      </div>
       <div class="navigation">
         <div class="navlink">
           <a href="#">Home</a>
@@ -24,17 +29,21 @@
           <a href="#">Products</a>
           <a href="#">Support</a>
           <a href="#">Contact</a>
+          
         </div>
         <div class="navlink-right">
-          <div class="cart">
-            <svg xmlns="http://www.w3.org/2000/svg" class="cart-icon" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-            </svg>
+          <div class="search">
+            <input type="text" placeholder="Search" aria-label="search" class="src-input" />
+            <button class="search-btn"><i class="fa-solid fa-magnifying-glass" aria-label="search btn"></i></button>
           </div>
+          <a href="#" class="cart-btn">
+            <i class="fa-solid fa-cart-shopping cart-icon"></i>
+            <span>0</span>
+          </a>
           <a href="#" class="register-btn">Register</a></a>
-          <a href="#" class="login-btn">Login</a>
+          <a href="#" class="login-btn">Login
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -46,7 +55,7 @@
     <div class="container hero-content">
       <div class="hero-left">
         <h1>Learn On Your <br> Schedule</h1>
-        <p>Study any topic, anytime. Choose from thousands of expert-led courses now.</p>
+        <p>Study any topic, anytime. Choose from thousands<br> of expert-led courses now.</p>
 
         <a class="btn btn-hero" href="#">See More</a>
       </div>
@@ -419,6 +428,13 @@
   </section>
   
   
+  <script>
+    window.addEventListener('scroll', function(){
+      const rubel = document.querySelector('header');
+      rubel.classList.toggle("sticky", window.scrollY>0);
+    });
+  </script>
+
  
 </body>
 
