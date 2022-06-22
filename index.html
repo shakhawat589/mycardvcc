@@ -10,6 +10,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" type="text/css" href="./css/style.css"/>
 </head>
+
 <body>
 
   <div class="contact-widget">
@@ -21,7 +22,9 @@
   <header class="nav">
     <div class="navbar container">
       <div class="brand">
-        <img src="./images/Logo.svg" alt="">
+        <a href="index.html">
+          MYCARD<span>VCC</span>.
+        </a>
       </div>
       <div class="toggle-btn" onclick="toggleActive();">
         <div class="line line1"></div>
@@ -30,11 +33,10 @@
       </div>
       <div class="navigation">
         <div class="navlink">
-          <a href="#">Home</a>
-          <a href="#">About Us</a>
-          <a href="#">Products</a>
-          <a href="#">Support</a>
-          <a href="#">Contact</a>
+          <a class="active" href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="contact.html">Contact</a>
+          <a href="blog.html">Blog</a>
           
         </div>
         <div class="navlink-right">
@@ -46,8 +48,8 @@
             <i class="fa-solid fa-cart-shopping cart-icon"></i>
             <span>0</span>
           </a>
-          <a href="#" class="register-btn">Register</a></a>
-          <a href="#" class="login-btn">Login
+          <a href="auth.html" class="register-btn">Register</a></a>
+          <a href="auth.html" class="login-btn">Login
             <i class="fa-solid fa-arrow-right-to-bracket"></i>
           </a>
         </div>
@@ -80,7 +82,7 @@
 
   <section class="top-products">
     <div class="container content-aling">
-      <h1 class="title">Top Categories</h1>
+      <h1 class="title">Top Products</h1>
       <div class="product-card-wrapper">
 
         <!-- product card -->
@@ -90,11 +92,23 @@
             <img src="./images/product (1).jpg">
           </div>
           <div class="card-body">
-            <h3 class="prodict-card-title">Virtual Visa Card</h3>
-            <p>$10.00</p>
+            <div class="card-body-left">
+              <a href="#" class="card-category">Card</a>
+              <h3 class="prodict-card-title">Virtual Visa Card</h3>
+              <p class="card-price">$10.00</p>
+            </div>
+            <div class="card-body-right">
+              <div class="start">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="outline fa-solid fa-star"></i>
+              </div>
+            </div>
           </div>
           <div class="card-footer">
-            <a href="#" class="product-card-btn">View</a>
+            <a href="product_details.html" class="product-card-btn">View</a>
           </div>
           
           <a class="addtocard" href="#">
@@ -113,11 +127,23 @@
             <img src="./images/product (2).jpg">
           </div>
           <div class="card-body">
-            <h3 class="prodict-card-title">Virtual Visa Card</h3>
-            <p>$10.00</p>
+            <div class="card-body-left">
+              <a href="#" class="card-category">Card</a>
+              <h3 class="prodict-card-title">Virtual Visa Card</h3>
+              <p class="card-price">$10.00</p>
+            </div>
+            <div class="card-body-right">
+              <div class="start">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="outline fa-solid fa-star"></i>
+              </div>
+            </div>
           </div>
           <div class="card-footer">
-            <a href="#" class="product-card-btn">View</a>
+            <a href="product_details.html" class="product-card-btn">View</a>
           </div>
           
           <a class="addtocard" href="#">
@@ -136,11 +162,23 @@
             <img src="./images/product (3).jpg">
           </div>
           <div class="card-body">
-            <h3 class="prodict-card-title">Virtual Visa Card</h3>
-            <p>$10.00</p>
+            <div class="card-body-left">
+              <a href="#" class="card-category">Card</a>
+              <h3 class="prodict-card-title">Virtual Visa Card</h3>
+              <p class="card-price">$10.00</p>
+            </div>
+            <div class="card-body-right">
+              <div class="start">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="outline fa-solid fa-star"></i>
+              </div>
+            </div>
           </div>
           <div class="card-footer">
-            <a href="#" class="product-card-btn">View</a>
+            <a href="product_details.html" class="product-card-btn">View</a>
           </div>
           
           <a class="addtocard" href="#">
@@ -159,11 +197,23 @@
             <img src="./images/product (4).jpg">
           </div>
           <div class="card-body">
-            <h3 class="prodict-card-title">Virtual Visa Card</h3>
-            <p>$10.00</p>
+            <div class="card-body-left">
+              <a href="#" class="card-category">Card</a>
+              <h3 class="prodict-card-title">Virtual Visa Card</h3>
+              <p class="card-price">$10.00</p>
+            </div>
+            <div class="card-body-right">
+              <div class="start">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="outline fa-solid fa-star"></i>
+              </div>
+            </div>
           </div>
           <div class="card-footer">
-            <a href="#" class="product-card-btn">View</a>
+            <a href="product_details.html" class="product-card-btn">View</a>
           </div>
           
           <a class="addtocard" href="#">
@@ -182,11 +232,23 @@
             <img src="./images/product (5).jpg">
           </div>
           <div class="card-body">
-            <h3 class="prodict-card-title">Virtual Visa Card</h3>
-            <p>$10.00</p>
+            <div class="card-body-left">
+              <a href="#" class="card-category">Card</a>
+              <h3 class="prodict-card-title">Virtual Visa Card</h3>
+              <p class="card-price">$10.00</p>
+            </div>
+            <div class="card-body-right">
+              <div class="start">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="outline fa-solid fa-star"></i>
+              </div>
+            </div>
           </div>
           <div class="card-footer">
-            <a href="#" class="product-card-btn">View</a>
+            <a href="product_details.html" class="product-card-btn">View</a>
           </div>
           
           <a class="addtocard" href="#">
@@ -205,11 +267,23 @@
             <img src="./images/product (6).jpg">
           </div>
           <div class="card-body">
-            <h3 class="prodict-card-title">Virtual Visa Card</h3>
-            <p>$10.00</p>
+            <div class="card-body-left">
+              <a href="#" class="card-category">Card</a>
+              <h3 class="prodict-card-title">Virtual Visa Card</h3>
+              <p class="card-price">$10.00</p>
+            </div>
+            <div class="card-body-right">
+              <div class="start">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="outline fa-solid fa-star"></i>
+              </div>
+            </div>
           </div>
           <div class="card-footer">
-            <a href="#" class="product-card-btn">View</a>
+            <a href="product_details.html" class="product-card-btn">View</a>
           </div>
           
           <a class="addtocard" href="#">
@@ -228,11 +302,23 @@
             <img src="./images/product (7).jpg">
           </div>
           <div class="card-body">
-            <h3 class="prodict-card-title">Virtual Visa Card</h3>
-            <p>$10.00</p>
+            <div class="card-body-left">
+              <a href="#" class="card-category">Card</a>
+              <h3 class="prodict-card-title">Virtual Visa Card</h3>
+              <p class="card-price">$10.00</p>
+            </div>
+            <div class="card-body-right">
+              <div class="start">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="outline fa-solid fa-star"></i>
+              </div>
+            </div>
           </div>
           <div class="card-footer">
-            <a href="#" class="product-card-btn">View</a>
+            <a href="product_details.html" class="product-card-btn">View</a>
           </div>
           
           <a class="addtocard" href="#">
@@ -251,11 +337,23 @@
             <img src="./images/product (8).jpg">
           </div>
           <div class="card-body">
-            <h3 class="prodict-card-title">Virtual Visa Card</h3>
-            <p>$10.00</p>
+            <div class="card-body-left">
+              <a href="#" class="card-category">Card</a>
+              <h3 class="prodict-card-title">Virtual Visa Card</h3>
+              <p class="card-price">$10.00</p>
+            </div>
+            <div class="card-body-right">
+              <div class="start">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="outline fa-solid fa-star"></i>
+              </div>
+            </div>
           </div>
           <div class="card-footer">
-            <a href="#" class="product-card-btn">View</a>
+            <a href="product_details.html" class="product-card-btn">View</a>
           </div>
           
           <a class="addtocard" href="#">
@@ -396,12 +494,12 @@
           <div class="footer-items">
             <h3 class="footer-title">Navigations</h3>
             <div class="footer-link">
-              <a href="#">Home</a>
-              <a href="#">About Us</a>
-              <a href="#">Products</a>
-              <a href="#">Support</a>
-              <a href="#">Contact</a>
-              <a href="#">Blog</a>
+               <a href="index.html">Home</a>
+               <a href="aboutus.html">About Us</a>
+               <a href="products.html">Products</a>
+               <a href="support.html">Support</a>
+               <a href="contact.html">Contact</a>
+               <a href="blog.html">Blog</a>
             </div>
           </div>
           <div class="footer-items">

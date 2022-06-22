@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyCardVCC</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+</head>
+
+<body>
+
+  <div class="contact-widget">
+    <a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="#" class="skype"><i class="fa-brands fa-skype"></i></a>
+    <a href="#" class="teligram"><i class="fa-brands fa-telegram"></i></a>
+  </div>
+
+  <header class="nav">
+    <div class="navbar container">
+      <div class="brand">
+        <a href="index.html">
+          MYCARD<span>VCC</span>.
+        </a>
+      </div>
+      <div class="toggle-btn" onclick="toggleActive();">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+      </div>
+      <div class="navigation">
+        <div class="navlink">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a class="active" href="contact.html">Contact</a>
+          <a href="blog.html">Blog</a>
+          
+        </div>
+        <div class="navlink-right">
+          <div class="search">
+            <input type="text" placeholder="Search" aria-label="search" class="src-input" />
+            <button class="search-btn"><i class="fa-solid fa-magnifying-glass" aria-label="search btn"></i></button>
+          </div>
+          <a href="#" class="cart-btn">
+            <i class="fa-solid fa-cart-shopping cart-icon"></i>
+            <span>0</span>
+          </a>
+          <a href="auth.html" class="register-btn">Register</a></a>
+          <a href="auth.html" class="login-btn">Login
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <section class="banner contact-banner">
+    <div class="container banner-content">
+      <h3>Contact Us</h3>
+      <p><a href="index.html">Home /</a> <span>Contact us</span></p>
+    </div>
+  </section>
+
+  <section class="main-area">
+    <div class="container contact-main-area">
+      
+      <div class="contact-left">
+        <h1 class="title">Contact Us</h1>
+        <form class="contact-form">
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="text" placeholder="Subject" />
+          <textarea type="text" placeholder="Your message here..."></textarea>
+          <button class="contact-btn"><i class="fa-solid fa-paper-plane"></i> Submit</button>
+        </form>
+      </div>
+      
+      
+      <div class="contact-right">
+        <div class="contact-lements">
+          <div class="contact-img-wrapper">
+            <img src="./images/contact_us.png">
+          </div>
+          <div class="img-bottom"></div>
+        </div>
+        
+       </div>
+
+       
+    </div>
+   
+  </section>
+
+  <section class="footer-section">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-top-content">
+          <div class="footer-items">
+            <div class="logo">
+              <a href="#"><img src="./images/Logo.svg"></a>
+            </div>
+            <p class="p-width">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat accusamus doloribus
+              tempore velit? Rem delectus, deleniti doloribus similique providen.</p>
+            <p>Academy House, 11 Dunraven<br> Place, Bridgend.</p>
+            <p>info@studyathomes.com</p>
+            <p>Support@studyathomes.com</p>
+          </div>
+          <div class="footer-items">
+            <h3 class="footer-title">Navigations</h3>
+            <div class="footer-link">
+               <a href="index.html">Home</a>
+               <a href="aboutus.html">About Us</a>
+               <a href="products.html">Products</a>
+               <a href="support.html">Support</a>
+               <a href="contact.html">Contact</a>
+               <a href="blog.html">Blog</a>
+            </div>
+          </div>
+          <div class="footer-items">
+            <h3 class="footer-title">Quick Links</h3>
+            <div class="footer-link">
+              <a href="#">Terms and Conditions</a>
+              <a href="#">Privacy Policy</a>
+            </div>
+          </div>
+          <div class="footer-items">
+            <h3 class="footer-title">Help & Support</h3>
+            <div class="footer-link">
+              <a href="#">Support Ticket</a>
+              <a href="#">Privacy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-content">
+          <div class="copyright">
+            <p>&copy; Allright reserved <span>MyCardVCC</span></p>
+          </div>
+          <div class="social-icon">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <script>
+    window.addEventListener('scroll', function(){
+      const rubel = document.querySelector('header');
+      rubel.classList.toggle("sticky", window.scrollY>0);
+    });
+
+    
+    function toggleActive(){
+      let toggleBtn = document.querySelector('.toggle-btn');
+      let toggleNav = document.querySelector('.navigation');
+      toggleBtn.classList.toggle("active-toggle")
+      toggleNav.classList.toggle("toggle-nav-active")
+    }
+
+
+
+  </script>
+
+ 
+</body>
+
+</html>
